@@ -2,18 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   name: remote-host
-  namespace: jenkins
+  namespace: remote-host
 spec:
-#  type: ClusterIP
-#  type: LoadBalancer
-#  type: ExternalName
-#  externalName: remote-host
-  type: NodePort
+  type: ClusterIP
   ports:
     - protocol: TCP
       name: remote-host
       port: 22
       targetPort: 22
-      nodePort: 32022
   selector:
     app: remote-host
+  clusterIP: 10.97.129.185
