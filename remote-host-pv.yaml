@@ -15,5 +15,5 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: remote-host-pv
   hostPath:
-    path: "/var/efs/remote-host" 
+    path: "/home/jenkins/remote-host-data-files" 
 
