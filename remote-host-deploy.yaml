@@ -7,13 +7,13 @@ metadata:
     app: remote-host
 spec:
   containers:
-    - image: 611601100250.dkr.ecr.ap-south-1.amazonaws.com/remote-host:1.2 
+    - image: 123456789012.dkr.ecr.ap-south-1.amazonaws.com/remote-host:1.2 
       name: remote-host
       ports:
         - containerPort: 22
       volumeMounts:
         - name: remote-host-script
-          mountPath: "/var/efs/remote-host/avangels-db-backup-s3.sh"
+          mountPath: "/home/jenkins/wp-data-files/avangels-db-backup-s3.sh"
           subPath: avangels-db-backup-s3.sh
   volumes:
     - name: remote-host-script
