@@ -16,7 +16,7 @@ spec:
           mountPath: "/home/jenkins/wp-data-files/my-wp-db-backup-s3"
           subPath: my-wp-db-backup-s3.sh
         - name: remote-host-tmp
-          mountPath: "/tmp
+          mountPath: "/tmp"
 
   volumes:
     - name: remote-host-script
