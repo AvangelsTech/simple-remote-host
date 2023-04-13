@@ -22,6 +22,9 @@ spec:
     - name: remote-host-script
       persistentVolumeClaim:
             claimName: remote-host-pvc
+    - name: remote-host-tmp
+      persistentVolumeClaim:
+            claimName: remote-host-pvc-tmp
 
   imagePullSecrets:
   - name: remote-secret
