@@ -13,7 +13,7 @@ spec:
         - containerPort: 22
       volumeMounts:
         - name: remote-host-script
-          mountPath: "/home/jenkins/wp-data-files/my-wp-db-backup-s3"
+          mountPath: "/home/jenkins/remote-host-data-files/my-wp-db-backup-s3"
           subPath: my-wp-db-backup-s3.sh
         - name: remote-host-tmp
           mountPath: "/tmp"
